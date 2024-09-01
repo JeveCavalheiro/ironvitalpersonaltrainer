@@ -171,13 +171,12 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-  
     <div class="modal fade" id="orcamentoModal" tabindex="-1" role="dialog" aria-labelledby="orcamentoModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="orcamentoModalLabel">Solicitar Orçamento</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -185,23 +184,35 @@
                     <form>
                         <div class="form-group">
                             <label for="nome">Nome</label>
-                            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                            <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
                         </div>
                         <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Seu email">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu E-mail">
                         </div>
                         <div class="form-group">
-                            <label for="servico">Serviço</label>
-                            <select class="form-control" id="servico">
-                                <option>Treinamento Funcional</option>
-                                <option>Musculação Personalizada</option>
-                                <option>Programas de Emagrecimento</option>
-                            </select>
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" class="form-control" id="telefone" placeholder="Seu Telefone">
                         </div>
                         <div class="form-group">
-                            <label for="mensagem">Mensagem</label>
-                            <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
+                            <label for="endereco">Endereço</label>
+                            <input type="text" class="form-control" id="endereco" placeholder="Seu Endereço">
+                        </div>
+                        <div class="form-group">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" class="form-control" id="cidade" placeholder="Sua Cidade">
+                        </div>
+                        <div class="form-group">
+                            <label for="uf">UF</label>
+                            <input type="text" class="form-control" id="uf" placeholder="Sua UF">
+                        </div>
+                        <div class="form-group">
+                            <label for="data">Data desejada para a realização do serviço</label>
+                            <input type="date" class="form-control" id="data">
+                        </div>
+                        <div class="form-group">
+                            <label for="observacoes">Observações</label>
+                            <textarea class="form-control" id="observacoes" rows="3" placeholder="Detalhe seu orçamento"></textarea>
                         </div>
                     </form>
                 </div>
