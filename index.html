@@ -22,10 +22,10 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh; 
             padding: 0 20px; 
             box-sizing: border-box; 
             text-align: center;
+            min-height: calc(100vh - 56px); 
         }
         .index-logo img {
             max-width: 100%;
@@ -78,6 +78,16 @@
             .carousel-caption h5 {
                 font-size: 1.25rem; 
             }
+            .balloon {
+                padding: 15px;
+                margin-bottom: 20px;
+            }
+            .balloon-text {
+                font-size: 1rem;
+            }
+            .index-container {
+                padding: 20px;
+            }
         }
         @media (max-width: 576px) {
             .carousel-caption h5 {
@@ -89,9 +99,8 @@
 <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="Logo/Logo6.png.png" alt="Iron Vital" style="height: 80px; margin-right: 10px;">
+            <img src="Logo/Logo6.png.png" alt="Iron Vital" style="height: 60px; margin-right: 10px;">
             <span style="font-size: 1.25rem; line-height: 1;">Iron Vital</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -110,7 +119,6 @@
         </div>
     </nav>
 
-    
     <div class="index-container">
         <div class="index-logo">
             <img src="Logo/Logo8.png.png" alt="Logo Iron Vital">
@@ -119,11 +127,9 @@
             <h1 class="balloon-text">Bem-vindo à Iron Vital</h1>
             <p class="balloon-text">A Iron Vital Personal Trainer foi fundada em 2010 com o objetivo de promover a saúde e bem-estar através de treinamentos personalizados. Hoje somos uma referência no mercado A Iron Vital Personal Trainer foi fundada em 2010 por um grupo de profissionais dedicados à promoção da saúde e bem-estar por meio de treinamentos personalizados. Com uma visão inovadora de atendimento, a empresa rapidamente se destacou pela qualidade dos seus serviços e pelo compromisso com os resultados dos clientes.
                 Ao longo dos anos, a Iron Vital expandiu seus serviços, incorporando novas técnicas e metodologias para atender a um público cada vez mais exigente. Hoje, é uma referência no mercado de personal trainers em Seara, reconhecida pela excelência no atendimento e pelos resultados obtidos por seus clientes.</p>
-
         </div>
     </div>
 
-    
     <div id="servicesCarousel" class="carousel slide my-5" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#servicesCarousel" data-slide-to="0" class="active"></li>
@@ -166,7 +172,6 @@
         </a>
     </div>
   
-    
     <div class="modal fade" id="orcamentoModal" tabindex="-1" role="dialog" aria-labelledby="orcamentoModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -180,35 +185,23 @@
                     <form>
                         <div class="form-group">
                             <label for="nome">Nome</label>
-                            <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+                            <input type="text" class="form-control" id="nome" placeholder="Seu nome">
                         </div>
                         <div class="form-group">
-                            <label for="email">E-mail</label>
-                            <input type="email" class="form-control" id="email" placeholder="Seu E-mail">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Seu email">
                         </div>
                         <div class="form-group">
-                            <label for="telefone">Telefone</label>
-                            <input type="tel" class="form-control" id="telefone" placeholder="Seu Telefone">
+                            <label for="servico">Serviço</label>
+                            <select class="form-control" id="servico">
+                                <option>Treinamento Funcional</option>
+                                <option>Musculação Personalizada</option>
+                                <option>Programas de Emagrecimento</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label for="endereco">Endereço</label>
-                            <input type="text" class="form-control" id="endereco" placeholder="Seu Endereço">
-                        </div>
-                        <div class="form-group">
-                            <label for="cidade">Cidade</label>
-                            <input type="text" class="form-control" id="cidade" placeholder="Sua Cidade">
-                        </div>
-                        <div class="form-group">
-                            <label for="uf">UF</label>
-                            <input type="text" class="form-control" id="uf" placeholder="Sua UF">
-                        </div>
-                        <div class="form-group">
-                            <label for="data">Data desejada para a realização do serviço</label>
-                            <input type="date" class="form-control" id="data">
-                        </div>
-                        <div class="form-group">
-                            <label for="observacoes">Observações</label>
-                            <textarea class="form-control" id="observacoes" rows="3" placeholder="Detalhe seu orçamento"></textarea>
+                            <label for="mensagem">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
                         </div>
                     </form>
                 </div>
@@ -220,33 +213,12 @@
         </div>
     </div>
 
-    
-    <footer class="bg-custom text-white py-4">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-md-4 mb-3">
-                    <h5>Sobre a Iron Vital</h5>
-                    <p>A Iron Vital Personal Trainer é dedicada a oferecer treinamentos personalizados que ajudam você a atingir seus objetivos de saúde e fitness. Entre em contato conosco para saber mais sobre nossos serviços e equipe.</p>
-                </div>
-                
-                <div class="col-md-4 mb-3">
-                    <h5>Contato</h5>
-                    <p><strong>Endereço:</strong> Rua Valdemar Heiden 531, - Padre Lidio Martinelli, Seara - SC</p>
-                    <p><strong>Telefone:</strong> (49) 99800-4851</p>
-                    <p><strong>E-mail:</strong> contato@ironvital.com.br</p>
-                    <p><strong>CEP:</strong> 89770-000</p>
-                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5549998004851" target="_blank" class="text-white">Inicie uma conversa</a></p>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <p>&copy; 2024 Iron Vital Personal Trainer. Todos os direitos reservados. Desenvolvedor Jeverson Luiz Cavalheiro</p>
-            </div>
-        </div>
+    <footer class="bg-custom text-center py-3">
+        <p>&copy; 2024 Iron Vital Personal Trainer. Todos os direitos reservados.</p>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
