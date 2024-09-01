@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Vital Personal Trainer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        body {
+            background-color: #F25835; 
+            color: #333;
+            padding-top: 56px; 
+            display: flex;
+            flex-direction: column;
+        }
+        .navbar {
+            background-color: #143373; 
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important; 
+        }
+        .index-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+            padding: 0 20px; 
+            box-sizing: border-box; 
+        }
+        .balloon {
+            background-color: #F25835; 
+            color: #fff;
+            padding: 20px 40px; 
+            border-radius: 15px; 
+            max-width: 600px; 
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+            position: relative; 
+            margin: 0 auto; 
+        }
+        .balloon::after {
+            content: "";
+            position: absolute;
+            bottom: -20px; 
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 20px;
+            border-style: solid;
+            border-color: #F25835 transparent transparent transparent; 
+        }
+        .balloon-text {
+            font-size: 1.125rem; 
+            margin: 0; 
+        }
+        .profile-img {
+            width: 100%; 
+            max-width: 300px; 
+            height: auto; 
+            border-radius: 10px; 
+            object-fit: cover; 
+            margin-bottom: 20px; 
+        }
+        .info-bubble {
+            background-color: #143373; 
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            max-width: 100%;
+            margin: 20px auto;
+        }
+        footer {
+            background-color: #143373; 
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: auto; 
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+  <
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="Logo/Logo6.png.png" alt="Iron Vital" style="height: 80px; margin-right: 10px;">
+        <span style="font-size: 1.25rem; line-height: 1;">Iron Vital</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Principal</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="profissionais.html">Profissionais</a></li>
+            <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+            <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#orcamentoModal">Orçamento</a></li>
+            <li class="nav-item"><a class="nav-link" href="contatos.html">Contatos</a></li>
+        </ul>
+    </div>
+  </nav>
+
+  
+  <div class="container my-5">
+    <div class="text-center">
+        <h3>Treinamento Funcional</h3>
+        <p>Um programa personalizado que combina exercícios de alta intensidade com movimentos funcionais para melhorar a força, agilidade e flexibilidade.</p>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 text-center mb-4">
+            <img class="img-fluid profile-img" src="Serviços/Treinamento Funcional.png" alt="Treinamento Funcional">
+        </div>
+        <div class="col-lg-5 col-md-6 text-center mb-4">
+            <img class="img-fluid profile-img" src="Serviços/Treinamento Funcional2.png" alt="Treinamento Funcional">
+        </div>
+    </div>
+    <div class="text-center my-5">
+        <h4>Veja o Vídeo de Treinamento Funcional</h4>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <video class="img-fluid" controls>
+                    <source src="Serviços/Treinamento Funcional- O Treino Ideal Para Melhorar a Sua Rotina - Autoridade Fitness.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="info-bubble">
+                <h5>Detalhes</h5>
+                <p><strong>Preço:</strong> R$ 150,00</p>
+                <p><strong>Tempo para Realizar o Serviço:</strong> 1 hora</p>
+                <p><strong>Dias de Atendimento:</strong> Segunda a Sexta</p>
+                <p><strong>Horários de Atendimento:</strong> 08:00 - 18:00</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="my-5"></div> 
+
+  
+  <div class="container my-5">
+    <div class="text-center">
+        <h3>Musculação Personalizada</h3>
+        <p>Treinos de musculação personalizados para ganho de massa muscular, tonificação e definição corporal, ajustados às necessidades e metas individuais.</p>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 text-center mb-4">
+            <img class="img-fluid profile-img" src="Serviços/Musculação Personalizada.png" alt="Musculação Personalizada">
+        </div>
+        <div class="col-lg-5 col-md-6 text-center mb-4">
+            <img class="img-fluid profile-img" src="Serviços/Musculação Personalizada2.png" alt="Musculação Personalizada">
+        </div>
+    </div>
+    <div class="text-center my-5">
+        <h4>Veja o Vídeo de Musculação Personalizada</h4>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <video class="img-fluid" controls>
+                    <source src="Serviços/Musculação personalizada.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="info-bubble">
+                <h5>Detalhes</h5>
+                <p><strong>Preço:</strong> R$ 200,00</p>
+                <p><strong>Tempo para Realizar o Serviço:</strong> 1,5 horas</p>
+                <p><strong>Dias de Atendimento:</strong> Segunda a Sábado</p>
+                <p><strong>Horários de Atendimento:</strong> 07:00 - 20:00</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="my-5"></div> 
+
+  
+  <div class="container my-5">
+    <div class="text-center">
+        <h3>Programa de Emagrecimento</h3>
+        <p>Programas que combinam treinos aeróbicos, musculação e orientação nutricional para ajudar na perda de peso de forma saudável e sustentável.</p>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-5 col-md-6 text-center mb-4">
+            <img class="img-fluid profile-img" src="Serviços/Programas de Emagrecimento.png" alt="Programa de Emagrecimento">
+        </div>
+        <div class="col-lg-5 col-md-6 text-center mb-4">
+            <img class="img-fluid profile-img" src="Serviços/Programas de Emagrecimento2.png" alt="Programa de Emagrecimento">
+        </div>
+    </div>
+    <div class="text-center my-5">
+        <h4>Veja o Vídeo de Programa de Emagrecimento</h4>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <video class="img-fluid" controls>
+                    <source src="Serviços/Programas de Emagrecimento video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="info-bubble">
+                <h5>Detalhes</h5>
+                <p><strong>Preço:</strong> R$ 250,00</p>
+                <p><strong>Tempo para Realizar o Serviço:</strong> 2 horas</p>
+                <p><strong>Dias de Atendimento:</strong> Segunda a Domingo</p>
+                <p><strong>Horários de Atendimento:</strong> 06:00 - 22:00</p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  
+  <div class="modal fade" id="orcamentoModal" tabindex="-1" role="dialog" aria-labelledby="orcamentoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orcamentoModalLabel">Solicitar Orçamento</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="Seu E-mail">
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" class="form-control" id="telefone" placeholder="Seu Telefone">
+            </div>
+            <div class="form-group">
+              <label for="endereco">Endereço</label>
+              <input type="text" class="form-control" id="endereco" placeholder="Seu Endereço">
+            </div>
+            <div class="form-group">
+              <label for="cidade">Cidade</label>
+              <input type="text" class="form-control" id="cidade" placeholder="Sua Cidade">
+            </div>
+            <div class="form-group">
+              <label for="uf">UF</label>
+              <input type="text" class="form-control" id="uf" placeholder="Sua UF">
+            </div>
+            <div class="form-group">
+              <label for="data">Data desejada para a realização do serviço</label>
+              <input type="date" class="form-control" id="data">
+            </div>
+            <div class="form-group">
+              <label for="observacoes">Observações</label>
+              <textarea class="form-control" id="observacoes" rows="3" placeholder="Detalhe seu orçamento"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  
+  <footer>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-md-4 mb-3">
+                <h5>Sobre a Iron Vital</h5>
+                <p>A Iron Vital Personal Trainer é dedicada a oferecer treinamentos personalizados que ajudam você a atingir seus objetivos de saúde e fitness. Entre em contato conosco para saber mais sobre nossos serviços e equipe.</p>
+            </div>
+
+            
+            <div class="col-md-4 mb-3">
+                <h5>Contato</h5>
+                <p><strong>Endereço:</strong> Rua Valdemar Heiden 531, - Padre Lidio Martinelli, Seara - SC</p>
+                <p><strong>Telefone:</strong> (49) 99800-4851</p>
+                <p><strong>E-mail:</strong> contato@ironvital.com.br</p>
+                <p><strong>CEP:</strong> 89770-000</p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/5549998004851" target="_blank" class="text-white">Inicie uma conversa</a></p>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-4">
+            <p>&copy; © 2024 Iron Vital Personal Trainer. Todos os direitos reservados. Desenvolvedor Jeverson Luiz Cavalheiro.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

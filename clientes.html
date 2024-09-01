@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Vital Personal Trainer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #F25835; 
+            color: #333;
+            padding-top: 56px; 
+        }
+        .navbar {
+            background-color: #143373; 
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important; 
+        }
+        .index-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+            padding: 0 20px; 
+            box-sizing: border-box; 
+        }
+        .balloon {
+            background-color: #143373; 
+            color: #fff;
+            padding: 20px 30px; 
+            border-radius: 15px; 
+            max-width: 100%; 
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+            position: relative; 
+            margin: 0 auto; 
+        }
+        .balloon::after {
+            content: "";
+            position: absolute;
+            bottom: -15px; 
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 15px;
+            border-style: solid;
+            border-color: #143373 transparent transparent transparent; 
+        }
+        .balloon-text {
+            font-size: 18px; 
+            margin: 0; 
+        }
+        .client-img {
+            width: 100%; 
+            max-width: 150px; 
+            height: auto; 
+            object-fit: cover; 
+            border-radius: 50%; 
+            margin-bottom: 20px; 
+        }
+        .bg-custom {
+        background-color: #143373;
+    }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="Logo/Logo6.png.png" alt="Iron Vital" style="height: 80px; margin-right: 10px;">
+            <span style="font-size: 1.25rem; line-height: 1;">Iron Vital</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Principal</a></li>
+                <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="profissionais.html">Profissionais</a></li>
+                <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#orcamentoModal">Orçamento</a></li>
+                <li class="nav-item"><a class="nav-link" href="contatos.html">Contatos</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h1 class="text-center">Clientes e Depoimentos</h1>
+    
+        
+        <div class="row align-items-center mb-4">
+            <div class="col-md-4 text-center">
+                <img src="Clientes/Fernanda Costa.png" class="img-fluid client-img" alt="Fernanda Costa">
+            </div>
+            <div class="col-md-8">
+                <div class="balloon">
+                    <p class="balloon-text">"A Iron Vital transformou minha vida! Perdi 10 kg em 3 meses e nunca me senti tão bem!"</p>
+                    <p><strong>Fernanda Costa</strong></p>
+                    <p>Data: 10/05/2024</p>
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="row align-items-center mb-4">
+            <div class="col-md-4 text-center">
+                <img src="Clientes/Ricardo Lima.png" class="img-fluid client-img" alt="Ricardo Lima">
+            </div>
+            <div class="col-md-8">
+                <div class="balloon">
+                    <p class="balloon-text">"Os profissionais são altamente qualificados e sempre me motivam a alcançar meus objetivos."</p>
+                    <p><strong>Ricardo Lima</strong></p>
+                    <p>Data: 18/06/2024</p>
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class="row align-items-center mb-4">
+            <div class="col-md-4 text-center">
+                <img src="Clientes/João Silva.png" class="img-fluid client-img" alt="João Silva">
+            </div>
+            <div class="col-md-8">
+                <div class="balloon">
+                    <p class="balloon-text">"As aulas são dinâmicas e os resultados são visíveis rapidamente. Estou muito satisfeito!"</p>
+                    <p><strong>João Silva</strong></p>
+                    <p>Data: 25/06/2024</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row align-items-center mb-4">
+            <div class="col-md-4 text-center">
+                <img src="Clientes/Maria Oliveira.png" class="img-fluid client-img" alt="Maria Oliveira">
+            </div>
+            <div class="col-md-8">
+                <div class="balloon">
+                    <p class="balloon-text">"A equipe é muito atenciosa e personalizada. Senti a diferença desde a primeira semana!"</p>
+                    <p><strong>Maria Oliveira</strong></p>
+                    <p>Data: 22/06/2024</p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row align-items-center mb-4">
+            <div class="col-md-4 text-center">
+                <img src="Clientes/Ana Pereira.png" class="img-fluid client-img" alt="Ana Pereira">
+            </div>
+            <div class="col-md-8">
+                <div class="balloon">
+                    <p class="balloon-text">"O atendimento é excelente, com foco total no cliente."</p>
+                    <p><strong>Ana Pereira</strong></p>
+                    <p>Data: 05/07/2024</p>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+  <div class="modal fade" id="orcamentoModal" tabindex="-1" role="dialog" aria-labelledby="orcamentoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orcamentoModalLabel">Solicitar Orçamento</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="Seu E-mail">
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" class="form-control" id="telefone" placeholder="Seu Telefone">
+            </div>
+            <div class="form-group">
+              <label for="endereco">Endereço</label>
+              <input type="text" class="form-control" id="endereco" placeholder="Seu Endereço">
+            </div>
+            <div class="form-group">
+              <label for="cidade">Cidade</label>
+              <input type="text" class="form-control" id="cidade" placeholder="Sua Cidade">
+            </div>
+            <div class="form-group">
+              <label for="uf">UF</label>
+              <input type="text" class="form-control" id="uf" placeholder="Sua UF">
+            </div>
+            <div class="form-group">
+              <label for="data">Data desejada para a realização do serviço</label>
+              <input type="date" class="form-control" id="data">
+            </div>
+            <div class="form-group">
+              <label for="observacoes">Observações</label>
+              <textarea class="form-control" id="observacoes" rows="3" placeholder="Detalhe seu orçamento"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <footer class="bg-custom text-white py-4">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-4 mb-3">
+                    <h5>Sobre a Iron Vital</h5>
+                    <p>A Iron Vital Personal Trainer é dedicada a oferecer treinamentos personalizados que ajudam você a atingir seus objetivos de saúde e fitness. Entre em contato conosco para saber mais sobre nossos serviços e equipe.</p>
+                </div>
+    
+                
+                <div class="col-md-4 mb-3">
+                    <h5>Contato</h5>
+                    <p><strong>Endereço:</strong> Rua Valdemar Heiden 531, - Padre Lidio Martinelli, Seara - SC</p>
+                    <p><strong>Telefone:</strong> (49) 99800-4851</p>
+                    <p><strong>E-mail:</strong> contato@ironvital.com.br</p>
+                    <p><strong>CEP:</strong> 89770-000</p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5549998004851" target="_blank" class="text-white">Inicie uma conversa</a></p>
+                </div>
+    
+            </div>
+    
+            <div class="text-center mt-4">
+                <p>&copy; © 2024 Iron Vital Personal Trainer. Todos os direitos reservados. Desenvolvedor Jeverson Luiz Cavalheiro.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

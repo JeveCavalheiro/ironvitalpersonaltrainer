@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iron Vital Personal Trainer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #F25835; 
+            color: #333;
+            padding-top: 56px; 
+        }
+        .navbar {
+            background-color: #143373; 
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important; 
+        }
+        .index-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; 
+            padding: 0 20px; 
+            box-sizing: border-box; 
+        }
+        .balloon {
+            background-color: #F25835; 
+            color: #fff;
+            padding: 20px 40px; 
+            border-radius: 15px; 
+            max-width: 600px; 
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); 
+            position: relative; 
+        }
+        .balloon::after {
+            content: "";
+            position: absolute;
+            bottom: -20px; 
+            left: 50%;
+            transform: translateX(-50%);
+            border-width: 20px;
+            border-style: solid;
+            border-color: #F25835 transparent transparent transparent; 
+        }
+        .balloon-text {
+            font-size: 24px; 
+            margin: 0; 
+        }
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .bg-custom {
+        background-color: #143373;
+    }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="Logo/Logo6.png.png" alt="Iron Vital" style="height: 80px; margin-right: 10px;">
+            <span style="font-size: 1.25rem; line-height: 1;">Iron Vital</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Principal</a></li>
+                <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                <li class="nav-item"><a class="nav-link" href="profissionais.html">Profissionais</a></li>
+                <li class="nav-item"><a class="nav-link" href="clientes.html">Clientes</a></li>
+                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#orcamentoModal">Orçamento</a></li>
+                <li class="nav-item"><a class="nav-link" href="contatos.html">Contatos</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container my-5">
+        <h1 class="text-center">Blog</h1>
+    
+        
+        <div class="row justify-content-center mb-4">
+            <div class="col-lg-8 col-md-10 col-12 text-center">
+                <h3>Benefícios do Treinamento Funcional</h3>
+                <p>Saiba mais sobre os principais benefícios dessa prática...</p>
+            </div>
+        </div>
+    
+        
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 col-md-10 col-12 text-center">
+                <img class="img-fluid" src="Blog/Quais são os benefícios do Treinamento Funcional.png" alt="Benefícios do Treinamento Funcional">
+                <p>O treinamento funcional é uma modalidade de exercícios que tem ganhado cada vez mais adeptos. Saiba mais sobre os principais benefícios dessa prática, que vão desde o aumento da força até a prevenção de lesões.</p>
+                <p>Nome do Autor: Renato Caninani</p>
+                <p>Data e Hora: 10/08/2024, 10:00</p>
+                <p>Fonte:<a href="https://blog.samisaude.com.br/beneficios-treino-funcional/" target="_blank"> Link para mais informações</a></p>
+            </div>
+        </div>
+    
+        
+        <div class="container my-5">
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-8 col-md-10 col-12 text-center">
+                    <h3>Como a Nutrição Pode Potencializar Seus Resultados</h3>
+                    <p>A alimentação desempenha um papel crucial nos resultados de um treinamento físico...</p>
+                </div>
+            </div>
+    
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 col-md-10 col-12 text-center">
+                    <img class="img-fluid" src="Blog/Quais são os.png" alt="Nutrição Esportiva">
+                    <p>A alimentação desempenha um papel crucial nos resultados de um treinamento físico. Neste post, abordamos dicas de nutrição que podem ajudar você a atingir seus objetivos mais rapidamente.</p>
+                    <p>Nome do Autor: Ronney Coleman</p>
+                    <p>Data e Hora: 18/07/2024, 14:00</p>
+                    <p>Fonte:<a href="https://www.clinicaphysico.com.br/a-nutricao-esportiva-pode-potencializar-seu-treinamento/" target="_blank"> Link para mais informações</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <div class="modal fade" id="orcamentoModal" tabindex="-1" role="dialog" aria-labelledby="orcamentoModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="orcamentoModalLabel">Solicitar Orçamento</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Seu Nome">
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="Seu E-mail">
+            </div>
+            <div class="form-group">
+              <label for="telefone">Telefone</label>
+              <input type="tel" class="form-control" id="telefone" placeholder="Seu Telefone">
+            </div>
+            <div class="form-group">
+              <label for="endereco">Endereço</label>
+              <input type="text" class="form-control" id="endereco" placeholder="Seu Endereço">
+            </div>
+            <div class="form-group">
+              <label for="cidade">Cidade</label>
+              <input type="text" class="form-control" id="cidade" placeholder="Sua Cidade">
+            </div>
+            <div class="form-group">
+              <label for="uf">UF</label>
+              <input type="text" class="form-control" id="uf" placeholder="Sua UF">
+            </div>
+            <div class="form-group">
+              <label for="data">Data desejada para a realização do serviço</label>
+              <input type="date" class="form-control" id="data">
+            </div>
+            <div class="form-group">
+              <label for="observacoes">Observações</label>
+              <textarea class="form-control" id="observacoes" rows="3" placeholder="Detalhe seu orçamento"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button type="button" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <footer class="bg-custom text-white py-4">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-4 mb-3">
+                    <h5>Sobre a Iron Vital</h5>
+                    <p>A Iron Vital Personal Trainer é dedicada a oferecer treinamentos personalizados que ajudam você a atingir seus objetivos de saúde e fitness. Entre em contato conosco para saber mais sobre nossos serviços e equipe.</p>
+                </div>
+    
+                
+                <div class="col-md-4 mb-3">
+                    <h5>Contato</h5>
+                    <p><strong>Endereço:</strong> Rua Valdemar Heiden 531, - Padre Lidio Martinelli, Seara - SC</p>
+                    <p><strong>Telefone:</strong> (49) 99800-4851</p>
+                    <p><strong>E-mail:</strong> contato@ironvital.com.br</p>
+                    <p><strong>CEP:</strong> 89770-000</p>
+                    <p><strong>WhatsApp:</strong> <a href="https://wa.me/5549998004851" target="_blank" class="text-white">Inicie uma conversa</a></p>
+                </div>
+    
+            </div>
+    
+            <div class="text-center mt-4">
+                <p>&copy; © 2024 Iron Vital Personal Trainer. Todos os direitos reservados. Desenvolvedor Jeverson Luiz Cavalheiro.</p>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>
